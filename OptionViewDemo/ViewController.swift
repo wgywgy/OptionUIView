@@ -15,16 +15,9 @@ class ViewController: UIViewController {
 
         let examView = ExampleView(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
         examView.backgroundColor = UIColor.darkGrayColor()
-        examView.displayType = [DisplayOptions.Display_1, DisplayOptions.Display_2];
-        
+        examView.displayType = [DisplayOptions.Display1, DisplayOptions.Display2]
+
         self.view.addSubview(examView)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

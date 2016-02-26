@@ -77,6 +77,8 @@
 				3A61512F1BF6DE7700406F83 /* Sources */,
 				3A6151301BF6DE7700406F83 /* Frameworks */,
 				3A6151311BF6DE7700406F83 /* Resources */,
+				C67FB13639AAF93C421945D9 /* Tailor */,
+				E20F18F3835148735CA3904F /* Find unused imports */,
 			);
 			buildRules = (
 			);
@@ -132,6 +134,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C67FB13639AAF93C421945D9 /* Tailor */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Tailor;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if hash tailor 2>/dev/null; then\n  tailor\nelse\n  echo \"warning: Please install Tailor from https://tailor.sh\"\nfi";
+		};
+		E20F18F3835148735CA3904F /* Find unused imports */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Find unused imports";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"/Users/wuguanyu/Library/Application Support/Developer/Shared/Xcode/Plug-ins/xcfui.xcplugin/Contents/Resources/fui_script.sh\" \"/Users/wuguanyu/GitHub/OptionUIView\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A61512F1BF6DE7700406F83 /* Sources */ = {
@@ -290,6 +323,7 @@
 				3A6151471BF6DE7700406F83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
